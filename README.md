@@ -6,6 +6,13 @@ and then reading that data from JSON format into pandas dataframes. After that I
 looking at the correlations between the number of free bikes in the city of Vancouver, BC
 compared to the statistics of various points of interest in the same city.
 
+##Instructions
+### First run city_bikes.ipynb. It will grab the data from the City Bikes API using an http request and store the data as a dataframe and csv file.
+### Next run yelp_foursquare_EDA.ipynb. This does the same thing as the first file but does it for the FourSquare and Yelp API's.
+### After that run joining_data.ipynb. This file joins the data from the City Bikes and FourSquare API's and then shows plots comparing data and a correlation heatmap
+### It also takes the joined data and creates and sql table and stores that.
+### Finally run model_building.ipynb. This will use the data from joining_data.ipynb to perform linear regression and other correlation statistics on the data.
+
 ## Process
 ### First I use and http request to grab data from each of the API's listed above.
 ### I parse through the data to see what city has data from each of the API's and how the data is structured.
